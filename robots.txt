@@ -1,5 +1,5 @@
 ﻿User-agent: *
-Sitemap: media-ehkspert.ru/sitemap.xml
+Sitemap: https://media-ehkspert.ru/sitemap.xml
 Disallow: /main.html
 Disallow: /main
 Disallow: /stories.html
