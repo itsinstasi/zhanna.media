@@ -77,13 +77,13 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/61756629_2351410164935961_8803894787351511040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=IN1AZCFjuakAX8Alpzu&oh=b6f711f27d94ea3ddef685e93dae0a50&oe=5EA63543" alt="Личный бренд | PR | Медиа"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/61756629_2351410164935961_8803894787351511040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=IN1AZCFjuakAX8Alpzu&oh=f950dbb7753f780fc29fe9007070d745&oe=5ECDC243" alt="Личный бренд | PR | Медиа"></div>
 							<div class="header__logo-txt">zhanna.media</div>
 						</a>
 						<div class="header__title">МЕДИА ЭКСПЕРТ</div>
 					</div>
 					<div id="settingsContainer" class="header__right" style="display:none">
-						<button onclick="window.open('http://itsinsta.site/page.html?project=zhanna.media', '_self');" class="btn stories-popup__buy">Настроить</button>
+						<button onclick="window.open('http://itsinsta.site/page.html?project=zhanna.media', '_self');" class="btn stories-popup__buy shake">Настроить</button>
 					</div>
 				</div>
 			</div>
@@ -138,7 +138,7 @@
 				<div class="container">
 					<h1 class="links-page-title">МЕДИА ЭКСПЕРТ</h1>
 
-					<div class="links-page-messagers count-2">
+					<div class="links-page-messagers count-1">
 						<a href="https://wa.me/79615236586" target="_blank" style="
 background-color: Transparent;
 border: 1px solid #FFFFFF;
@@ -148,16 +148,6 @@ color: #FFFFFF;
 							class="links-page-messager">
 							<i class="fa fa-whatsapp" aria-hidden="true">
 								</i>WhatsApp
-						</a>
-						<a href="https://www.instagram.com/zhanna.media" target="_blank" style="
-background-color: Transparent;
-border: 1px solid #FFFFFF;
-color: #FFFFFF;
-"
-								onclick="ym(56750995, 'reachGoal', 'Instagram'); return true;"
-							class="links-page-messager">
-							<i class="fa fa-instagram" aria-hidden="true">
-								</i>Instagram
 						</a>
 					</div>
 
@@ -249,10 +239,6 @@ background-color: Transparent;
 
 					<div class="links-page-soc">
 						<a href="https://www.facebook.com/pampura.zhanna" target="_blank" class="links-page-soc__link" title="Facebook"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-						<a href="https://www.instagram.com/zhanna.media" target="_blank" style="
-"
-								onclick="ym(56750995, 'reachGoal', 'Instagram'); return true;" 
-							class="links-page-soc__link" title="Instagram"><i class="fa fa-instagram" aria-hidden="true"></i></a>
 					</div>
 					<div class="links-page-footer">
 						<a href="https://lichnyj-brend.ru?ref=zhanna.media" target="_blank">Личный Бренд</a><br/>
@@ -305,6 +291,9 @@ $(document).ready(function(){
 
 		$("#settingsContainer").show();
 		$("#settingsContainer").children("btn").first().attr("onclick", 'window.open("http://itsinsta.site/invite.html?invitationId="' + lid + ')');
+	}
+	else if (lid && lid == "true") {
+        localStorage.setItem("hasToken", true);
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
