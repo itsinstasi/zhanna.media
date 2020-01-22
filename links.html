@@ -77,7 +77,7 @@
 				<div class="header__wrap">
 					<div class="header__left">
 						<a href="./" class="header__logo">
-							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/61756629_2351410164935961_8803894787351511040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=IN1AZCFjuakAX8Alpzu&oh=f950dbb7753f780fc29fe9007070d745&oe=5ECDC243" alt="Личный бренд | PR | Медиа"></div>
+							<div class="header__logo-pic"><img src="https://scontent-arn2-2.cdninstagram.com/v/t51.2885-19/s150x150/61756629_2351410164935961_8803894787351511040_n.jpg?_nc_ht=scontent-arn2-2.cdninstagram.com&_nc_ohc=7uxgcaPyEoMAX_W1EV7&oh=ffc0f9ca46b9c3109399a5c0347f76e8&oe=5ECDC243" alt="Личный бренд | PR | Медиа"></div>
 							<div class="header__logo-txt">zhanna.media</div>
 						</a>
 						<div class="header__title">МЕДИА ЭКСПЕРТ</div>
@@ -294,6 +294,7 @@ $(document).ready(function(){
 	}
 	else if (lid && lid == "true") {
         localStorage.setItem("hasToken", true);
+		$("#settingsContainer").show();
 	}
 	else if (localStorage.getItem("hasToken"))
 	{
